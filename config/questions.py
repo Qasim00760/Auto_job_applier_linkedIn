@@ -88,7 +88,7 @@ then it will divide by 30 or 7 and answer respectively. Examples:
 '''
 
 # Your LinkedIn headline in quotes Eg: "Software Engineer @ Google, Masters in Computer Science", "Recent Grad Student @ MIT, Computer Science"
-linkedin_headline = "Electrical Project Manager | Senior Electrical Engineer | PMP® | 15+ Years HV/MV/LV Power Distribution, Saudi Arabia" # "Headline" or "" to leave this question unanswered
+linkedin_headline = "Project Manager Electrical | Senior Electrical Engineer | PE | PMP® | PMI-RMP | PMO-CP | QMS | EMS | LEED GA | NEBOSH" # "Headline" or "" to leave this question unanswered
 
 # Your summary in quotes, use \n to add line breaks if using single quotes "Summary".You can skip \n if using triple quotes """Summary"""
 linkedin_summary = """
