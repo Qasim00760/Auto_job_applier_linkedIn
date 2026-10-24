@@ -1002,6 +1002,12 @@ def external_apply(pagination_element: WebElement, job_id: str, job_link: str, r
         driver.switch_to.window(windows[-1])
         application_link = driver.current_url
         print_lg('Got the external application link "{}"'.format(application_link))
+        try:
+            from modules.external_apply.queue_manager import enqueue_external_job
+            enqueue_external_job(job_id, "External LinkedIn Job", "Company Portal", job_link, application_link)
+            print_lg("Enqueued external job to external_jobs_queue.json for automated ATS apply.")
+        except Exception as q_err:
+            logger.warning("Could not queue external job: %s", q_err)
         if close_tabs and driver.current_window_handle != linkedIn_tab: driver.close()
         driver.switch_to.window(linkedIn_tab)
         return False, application_link, tabs_count

@@ -22,3 +22,10 @@ apikeys.py
 user_config.json
 .bot_run.log
 .bot_run.pid
+
+# Security & External Apply module secrets & runtime queue
+.env
+*.env
+external_jobs_queue.json
+external_jobs_history.json
+external_apply_secrets.json
